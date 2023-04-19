@@ -1,0 +1,151 @@
+[
+  {
+    "_id": 1,
+    "brand": "Subaru",
+    "model": "WRX",
+    "model years": "2022-Present",
+    "number of doors": 4,
+    "modern hp": 271
+  },
+  {
+    "_id": 2,
+    "brand": "Ford",
+    "model": "F150",
+    "model years": "1975-2023",
+    "number of doors": 2,
+    "modern hp": 400
+  },
+  {
+    "_id": 3,
+    "brand": "Honda",
+    "model": "Civic Type R",
+    "model years": "1997-Present",
+    "number of doors": 4,
+    "modern hp": 315
+  },
+  {
+    "_id": 4,
+    "brand": "Porsche",
+    "model": "GT3",
+    "model years": "2022-Present",
+    "number of doors": 2,
+    "modern hp": 502
+  },
+  {
+    "_id": 5,
+    "brand": "Toyota",
+    "model": "GR Corolla",
+    "model years": "2022-Present",
+    "number of doors": 4,
+    "modern hp": 300
+  },
+  {
+    "_id": 6,
+    "brand": "Mazda",
+    "model": "Mazda3",
+    "model years": "2014-2018",
+    "number of doors": 4,
+    "modern hp": 155
+  },
+  {
+    "_id": 7,
+    "brand": "Corvette",
+    "model": "Corvette Stingray",
+    "model years": "1963-Present",
+    "number of doors": 2,
+    "modern hp": 495
+  },
+  {
+    "_id": 8,
+    "brand": "Nissan",
+    "model": "370Z",
+    "model years": "2008-2021",
+    "number of doors": 2,
+    "modern hp": 324
+  },
+  {
+    "_id": 9,
+    "brand": "Porsche",
+    "model": "993 Turbo",
+    "model years": "1995-1999",
+    "number of doors": 2,
+    "modern hp": 408
+  },
+  {
+    "_id": 10,
+    "brand": "Singer",
+    "model": "DLS",
+    "model years": "2020-2022",
+    "number of doors": 2,
+    "modern hp": 500
+  },
+  {
+    "_id": 11,
+    "brand": "Rivian",
+    "model": "R1T",
+    "model years": "2021-present",
+    "number of doors": 4,
+    "modern hp": 800
+  },
+  {
+    "_id": 12,
+    "brand": "koenigsegg",
+    "model": "Jesko",
+    "model years": "2021-present",
+    "number of doors": 2,
+    "modern hp": 1281
+  },
+  {
+    "_id": 13,
+    "brand": "Lucid",
+    "model": "Air",
+    "model years": "2022-2023",
+    "number of doors": 4,
+    "modern hp": 480
+  },
+  {
+    "_id": 14,
+    "brand": "Pontiac",
+    "model": "Firebird"
+  },
+  {
+  "_id": 15,
+  "brand": "Tesla",
+  "model": "Model S Plaid",
+  "model years": "2020-present",
+  "number of doors": 4,
+  "modern hp": 1020
+  },
+  {
+  "_id": 16,
+  "brand": "Ford",
+  "model": "Model T",
+  "model years": "1908-1927",
+  "number of doors": 4,
+  "modern hp": 20
+  },
+  {
+  "_id": 17,
+  "brand": "Ford",
+  "model": "Pinto",
+  "model years": "1970-1980",
+  "number of doors": 2,
+  "modern hp": 54
+  },
+  {
+  "_id": 18,
+  "brand": "Pontiac",
+  "model": "Aztek",
+  "model years": "2001–2005",
+  "number of doors": 4,
+  "modern hp": 185
+  },
+  {
+  "_id": 19,
+  "brand": "Reliant",
+  "model": "Robin",
+  "model years": "1973-2001",
+  "number of doors": 1,
+  "modern hp": 20
+  }
+]

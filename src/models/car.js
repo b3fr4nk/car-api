@@ -5,11 +5,11 @@ const Schema = mongoose.Schema
 const CarSchema = new Schema({
     make: {type: String, required: true},
     model: {type: String, required: true},
-    model_years: {type: Number, required: true},
+    model_years: {type: String, required: true},
     number_of_doors: {type: Number, required: true},
     modern_hp: {type: Number, required: true}
 })
 
 const Car = mongoose.model('Car', CarSchema)
 
-model.exports = Car
+module.exports = Car

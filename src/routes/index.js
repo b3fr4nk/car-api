@@ -1,10 +1,8 @@
 const express = require('express')
-const messageRoutes = require('./message.js')
-const userRoutes = require('./user.js')
+const carRoutes = require('./cars')
 
 const router = express.Router()
 
-router.use('/messages', messageRoutes)
-router.use('/users', userRoutes)
+router.use(carRoutes)
 
 module.exports = router
