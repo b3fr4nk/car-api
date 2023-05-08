@@ -3,7 +3,7 @@ const router = express.Router();
 
 const Car = require('../models/car')
 
-/** Route to get all messages. */
+/** Route to get all car. */
 router.get('/', (req, res) => {
     Car.find().then((cars) => {
         return res.json({cars})
@@ -13,14 +13,14 @@ router.get('/', (req, res) => {
     })
 })
 
-/** Route to get one message by id. */
+/** Route to get one car by id. */
 router.get('/:carId', (req, res) => {
     Car.findById(req.params.carId).then((car) => {
         return res.json({car})
     })
 })
 
-/** Route to add a new message. */
+/** Route to add a new car. */
 router.post('/', (req, res) => {
     console.log(req.body)
     const car = new Car(req.body)
@@ -32,7 +32,7 @@ router.post('/', (req, res) => {
 
 })
 
-/** Route to update an existing message. */
+/** Route to update an existing car. */
 router.put('/:carId', (req, res) => {
     Car.findByIdAndUpdate(req.params.carId, req.body).then((car) => {
         return res.json({car})
@@ -41,7 +41,7 @@ router.put('/:carId', (req, res) => {
     })
 })
 
-/** Route to delete a message. */
+/** Route to delete a car. */
 router.delete('/:carId', (req, res) => {
     Car.findByIdAndDelete(req.params.carId).then(() => {
         console.log(req.params.carId)
