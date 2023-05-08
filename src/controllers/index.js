@@ -1,9 +1,9 @@
-const express = require('express')
-const carRoutes = require('./cars')
-const userRoutes = require('./users')
+/* eslint-disable new-cap */
+const express = require('express');
+const carRoutes = require('./cars');
 
-const router = express.Router()
+const router = express.Router();
 
-router.use(carRoutes)
+router.use(carRoutes);
 
-module.exports = router
+module.exports = router;
