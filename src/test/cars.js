@@ -43,6 +43,34 @@ describe('Cars', () => {
     done();
   });
 
+  it('should update a car', (done) => {
+    Car.findOne({make: 'Mazda3'})
+        .then((carId) => {
+          agent.put(`/${carId}`)
+              .send({horsepower: 160})
+              .then((res) => {
+                chai.should(res.body.horsepower).be.equal(160);
+                done();
+              });
+          done();
+        });
+    done();
+  });
+
+  it('should get car with specified Id', (done) => {
+    Car.findOne({model: 'Mazda3'})
+        .then((car) => {
+          agent.get(`/${car._id}`)
+              .end((err, res) => {
+                res.should.have.response(200);
+                chai.should(res.body.make).to.be.equal('Mazda');
+                done();
+              });
+          done();
+        });
+    done();
+  });
+
   it('should delete a car', (done) => {
     Car.estimatedDocumentCount()
         .then((initialDocCount) => {
