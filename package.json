@@ -5,7 +5,7 @@
   "main": "src/server.js",
   "scripts": {
     "start": "nodemon src/server.js",
-    "test": "mocha --exit"
+    "test": "mocha ./src/test"
   },
   "author": "",
   "license": "ISC",
@@ -16,10 +16,17 @@
   },
   "dependencies": {
     "body-parser": "^1.20.2",
+    "chai": "^4.3.7",
+    "chai-http": "^4.3.0",
+    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-json": "^1.0.0",
-    "mongoose": "^5.9.7"
+    "jsonwebtoken": "^9.0.0",
+    "mocha": "^10.2.0",
+    "mongoose": "^5.9.7",
+    "tap": "^16.3.4",
+    "util.promisify": "^1.1.2"
   }
 }
