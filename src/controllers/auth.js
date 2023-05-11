@@ -28,7 +28,8 @@ router.post('/login', (req, res) => {
           });
             // Set a cookie and redirect to root
           res.cookie('nToken', token, {maxAge: 900000, httpOnly: true});
-          return res.json({user: user.username, message: 'successful login'});
+          // eslint-disable-next-line max-len
+          return res.json({user: user.username, message: 'successful login', cookie: token});
         });
       })
       .catch((err) => {
