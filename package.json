@@ -15,6 +15,7 @@
     "nodemon": "^2.0.2"
   },
   "dependencies": {
+    "bcrypt": "^5.1.0",
     "body-parser": "^1.20.2",
     "chai": "^4.3.7",
     "chai-http": "^4.3.0",

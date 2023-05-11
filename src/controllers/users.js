@@ -6,22 +6,10 @@ const User = require('../models/user');
 
 /** Route to get one user by username. */
 router.get('/:username', (req, res) => {
-  User.findOne();
-});
-
-/** Route to add a new user. */
-router.post('/', (req, res) => {
-  if (req.user.admin) {
-    console.log(req.body);
-    const user = new User(req.body);
-    user.save().then((userResult) => {
-      return res.json({user: userResult});
-    }).catch((err) => {
-      throw err;
-    });
-  } else {
-    return null;
-  }
+  User.findOne({username: req.params.username})
+      .then((user) => {
+        return res.json(user);
+      });
 });
 
 /** Route to update an existing user. */
