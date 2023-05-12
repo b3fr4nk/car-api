@@ -57,8 +57,12 @@ router.post('/signup', (req, res) => {
 
 // LOG OUT
 router.get('/logout', (req, res) => {
-  res.clearCookie('nToken');
-  return res.json({message: 'logged out user', user: req.user});
+  if (req.user) {
+    res.clearCookie('nToken');
+    return res.json({message: 'logged out user'});
+  } else {
+    return res.json({message: 'already logged out'});
+  }
 });
 
 module.exports = router;
