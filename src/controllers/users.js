@@ -21,7 +21,7 @@ router.get('/users/:userId/garage', (req, res) => {
 });
 
 /** Route to update an existing user. */
-router.put('/users/cars', (req, res) => {
+router.put('/users/garage', (req, res) => {
   if (req.user) {
     const cars = req.body.cars;
     cars.forEach((car) => {
