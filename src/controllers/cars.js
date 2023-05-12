@@ -5,7 +5,7 @@ const router = express.Router();
 const Car = require('../models/car');
 
 /** Route to get all car. */
-router.get('/', (req, res) => {
+router.get('/cars', (req, res) => {
   Car.find().then((cars) => {
     return res.json({cars});
   })
@@ -15,14 +15,14 @@ router.get('/', (req, res) => {
 });
 
 /** Route to get one car by id. */
-router.get('/:carId', (req, res) => {
+router.get('/cars/:carId', (req, res) => {
   Car.findById(req.params.carId).then((car) => {
     return res.json({car});
   });
 });
 
 /** Route to add a new car. */
-router.post('/', (req, res) => {
+router.post('/cars/', (req, res) => {
   console.log(req.body);
   const car = new Car(req.body);
   car.save().then((carResult) => {
@@ -33,7 +33,7 @@ router.post('/', (req, res) => {
 });
 
 /** Route to update an existing car. */
-router.put('/:carId', (req, res) => {
+router.put('/cars/:carId', (req, res) => {
   Car.findByIdAndUpdate(req.params.carId, req.body).then((car) => {
     return res.json({car});
   }).catch((err) => {
@@ -42,7 +42,7 @@ router.put('/:carId', (req, res) => {
 });
 
 /** Route to delete a car. */
-router.delete('/:carId', (req, res) => {
+router.delete('/cars/:carId', (req, res) => {
   Car.findByIdAndDelete(req.params.carId).then(() => {
     console.log(req.params.carId);
     return res.json({
