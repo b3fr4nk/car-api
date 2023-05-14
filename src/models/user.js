@@ -7,7 +7,7 @@ const Populate = require('../utils/autopopulate');
 const userSchema = new Schema({
   username: {type: String, required: true},
   password: {type: String, required: true},
-  admin: {type: Boolean, required: false},
+  admin: {type: Boolean, required: true},
   cars: [{type: Schema.Types.ObjectId, ref: 'Car'}],
 }, {timestamps: true});
 

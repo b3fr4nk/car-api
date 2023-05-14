@@ -50,7 +50,7 @@ router.put('/users/garage', (req, res) => {
 
 /** Route to delete a user. */
 router.delete('/user/:userId', (req, res) => {
-  if (req.user) {
+  if (req.user._id === req.params.userId) {
     Car.findByIdAndDelete(req.params.userId).then(() => {
       console.log(req.params.userId);
       return res.json({
